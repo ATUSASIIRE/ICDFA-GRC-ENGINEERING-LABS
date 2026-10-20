@@ -1,1 +1,260 @@
+GRC205 Week 20 Incident Response Planning Assignment
 
+Professional GitHub Project Report
+ Incident Management & Business Continuity (GRC205/GRC105) Assignment
+ Author: Atusasiire Daren Cared
+ Student ID: 2025/GRC/12793
+ Institution: International Cybersecurity and Digital Forensics Academy (ICDFA)
+ Instructor: Mr. Aminu Idris
+ Submission Date: 19 October 2026
+ Source: GRC205_Week20_Atusasiire_Daren_Cared
+
+🚨 Incident Response Planning for a Ransomware Attack
+Overview
+
+This project presents a comprehensive Incident Response (IR), Business Continuity (BC), and Recovery Strategy for a fictional ransomware incident affecting Northbridge Skills Institute. The exercise evaluates incident classification, response coordination, evidence preservation, communication planning, recovery procedures, and post-incident improvements aligned with cybersecurity governance and industry best practices.
+
+Scenario Summary
+
+At 08:45 WAT, Northbridge Skills Institute detected a critical cybersecurity incident involving:
+
+Confirmed ransomware activity on FIN-PC07 and FS01
+Loss of access to learning materials and student assessments
+Suspicious privileged account activity
+Unusual outbound data transfer of approximately 1.2 GB
+Potential compromise of backup infrastructure
+An upcoming online examination scheduled for 11:00 WAT
+
+The primary objectives were:
+
+Contain the threat.
+Preserve forensic evidence.
+Protect backup systems.
+Maintain business continuity.
+Safely restore services.
+Determine whether data exfiltration occurred.
+📊 Incident Assessment
+Incident Classification
+
+Category: Ransomware / Cyber Extortion
+
+Severity Level: Critical
+
+The incident was classified as Critical because:
+
+Multiple systems showed ransomware indicators.
+Core learning services became unavailable.
+Privileged account misuse was suspected.
+Backup integrity was uncertain.
+Potential sensitive data exposure existed.
+Academic operations were directly affected.
+Key Timeline
+Time	EventDay -1 16:40	Suspicious payroll attachment opened
+Day 0 01:15	Finance account login from unfamiliar device
+Day 0 01:35	Unexpected backup administrator logins
+Day 0 01:50	1.2 GB data transfer to unknown cloud storage
+Day 0 08:30	Ransom note detected on FS01
+Day 0 08:40	Learning portal becomes unavailable
+Day 0 08:45	Critical incident declared
+
+Source: Assignment timeline.
+
+🛡️ Assets Impact Analysis
+Asset	ImpactFIN-PC07	Potential infection source
+FS01	Encrypted files and ransom note
+LMS01	Learning service outage
+BAK01	Possible backup compromise
+Microsoft 365	Identity compromise suspected
+Learner & Finance Records	Potential confidentiality exposure
+CIA Impact
+Security Principle	ImpactConfidentiality	Potential unauthorized data access
+Integrity	File modification and encryption
+Availability	Critical service disruption
+
+🎯 Incident Response Strategy
+Immediate Priorities
+Stop ransomware propagation.
+Preserve forensic artifacts.
+Protect backup repositories.
+Establish trusted communication channels.
+Ensure examination continuity planning.
+Investigate potential exfiltration.
+Begin secure recovery.
+👥 Incident Response Team Structure
+Role	ResponsibilityIncident Response Lead	Overall command and decision-making
+Security Analyst	Detection, analysis, threat hunting
+Forensics Lead	Evidence acquisition and preservation
+IT Operations Lead	Containment and recovery
+Academic Director	Academic continuity decisions
+Legal & Privacy Advisor	Compliance obligations
+Communications Lead	Stakeholder communication
+Executive Sponsor	Strategic approval and oversight
+
+📋 Response Playbook
+First 60 Minutes
+Critical Actions
+Declare incident severity.
+Establish emergency communication channels.
+Isolate FIN-PC07.
+Restrict FS01 network access.
+Secure backup systems.
+Revoke suspicious account sessions.
+Notify leadership and external responders.
+Preserve log data and volatile evidence.
+
+These actions are designed to minimize spread while maintaining investigative integrity.
+
+First 24 Hours
+Investigation Activities
+Threat hunting across infrastructure.
+Validation of Microsoft 365 trust.
+Backup restore testing in isolated environments.
+Data exfiltration analysis.
+Recovery environment preparation.
+Credential rotation.
+Service restoration planning.
+🔍 Digital Forensics & Evidence Preservation
+
+The plan includes a structured evidence management process.
+
+Evidence Sources
+Forensic images of affected endpoints
+Email attachments and headers
+Microsoft 365 audit logs
+Authentication records
+Firewall, DNS, and proxy logs
+Ransom notes
+Backup system audit records
+Chain of Custody
+
+For every evidence item:
+
+Unique evidence ID assigned
+Collection method documented
+Collection timestamps recorded
+Integrity hashes calculated
+Access logged and restricted
+
+This ensures forensic admissibility and investigative reliability.
+
+🔄 Recovery Strategy
+Recovery Process
+Phase 1 - Eradication
+Identify attack entry point.
+Remove persistence mechanisms.
+Reset compromised credentials.
+Patch vulnerabilities.
+Rebuild affected systems from trusted sources.
+Phase 2 - Restoration
+
+Recovery priority:
+
+Identity and security infrastructure
+Backup systems
+File server (FS01)
+Learning Management System
+User endpoints
+Acceptance Criteria
+
+Services are restored only when:
+
+No malicious activity is detected.
+Credentials are rotated.
+Security controls are operational.
+Data integrity validation succeeds.
+Business owners approve service return.
+📢 Communication Strategy
+
+The communication framework ensures timely updates to:
+
+Executive management
+Technical response teams
+Learners
+Teaching staff
+Legal and privacy stakeholders
+Service providers
+Regulators
+Media representatives
+
+Key principles include:
+
+Use verified communication channels.
+Avoid speculation.
+Share only validated facts.
+Maintain a single approved spokesperson.
+🧪 Tabletop Exercise
+
+A 60-minute ransomware tabletop exercise was designed to test organizational readiness.
+
+Objectives
+Validate incident declaration procedures.
+Assess containment decisions.
+Evaluate evidence preservation.
+Exercise recovery planning.
+Test communication effectiveness.
+Improve examination continuity processes.
+Notable Exercise Injects
+Pressure to reopen systems using unverified backups.
+Attacker claims of stolen records.
+Backup restoration failure.
+Suspicious OAuth application discovery.
+Media inquiries and misinformation campaigns.
+
+✅ Improvement Plan
+High-Priority Recommendations
+Backup Security
+Deploy immutable backups.
+Separate backup administration accounts.
+Conduct regular restoration testing.
+Identity Security
+Strengthen Microsoft 365 governance.
+Improve OAuth application controls.
+Enhance MFA protection.
+Monitoring
+Expand EDR deployment.
+Centralize security logging.
+Improve threat detection capabilities.
+Incident Readiness
+Maintain offline contact lists.
+Formalize DFIR retainers.
+Improve phishing awareness training.
+Enhance examination continuity procedures.
+
+🏆 Key Lessons Learned
+
+The most important lesson from the exercise is that operational urgency should never override security validation. Restoring services from unverified backups introduces significant risk and may worsen an incident.
+
+Additional lessons include:
+
+Backup success messages do not guarantee recoverability.
+Cloud identity systems require equal attention during ransomware investigations.
+Evidence preservation must occur alongside containment.
+Communication should clearly distinguish facts from assumptions.
+Regular testing is essential for recovery confidence.
+📝 Conclusion
+
+This project demonstrates a complete ransomware incident response framework incorporating:
+
+Incident classification and triage
+CSIRT governance and responsibilities
+Evidence preservation procedures
+Containment and eradication activities
+Business continuity planning
+Recovery validation
+Stakeholder communications
+Continuous improvement
+
+The proposed approach emphasizes security, resilience, and evidence-based decision-making while ensuring that business and educational services can be restored safely following a major cyber incident.
+
+Technologies, Frameworks & Standards Referenced
+NIST Cybersecurity Framework (CSF)
+NIST SP 800-61 Incident Handling
+Endpoint Detection and Response (EDR)
+Microsoft 365 Security Controls
+Digital Forensics Best Practices
+Business Continuity Management (BCM)
+Ransomware Recovery Methodologies
+
+Author: Atusasiire Daren Cared
+ Course: GRC205/GRC105 – Incident Management and Business Continuity
+ Repository Purpose: Academic cybersecurity incident response planning and governance exercise.
