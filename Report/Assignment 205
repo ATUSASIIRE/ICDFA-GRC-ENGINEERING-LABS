@@ -9,7 +9,7 @@ Professional GitHub Project Report
  Submission Date: 19 October 2026
  Source: GRC205_Week20_Atusasiire_Daren_Cared
 
-🚨 Incident Response Planning for a Ransomware Attack
+Incident Response Planning for a Ransomware Attack
 Overview
 
 This project presents a comprehensive Incident Response (IR), Business Continuity (BC), and Recovery Strategy for a fictional ransomware incident affecting Northbridge Skills Institute. The exercise evaluates incident classification, response coordination, evidence preservation, communication planning, recovery procedures, and post-incident improvements aligned with cybersecurity governance and industry best practices.
@@ -33,7 +33,7 @@ Protect backup systems.
 Maintain business continuity.
 Safely restore services.
 Determine whether data exfiltration occurred.
-📊 Incident Assessment
+Incident Assessment
 Incident Classification
 
 Category: Ransomware / Cyber Extortion
@@ -59,7 +59,7 @@ Day 0 08:45	Critical incident declared
 
 Source: Assignment timeline.
 
-🛡️ Assets Impact Analysis
+Assets Impact Analysis
 Asset	ImpactFIN-PC07	Potential infection source
 FS01	Encrypted files and ransom note
 LMS01	Learning service outage
@@ -71,7 +71,7 @@ Security Principle	ImpactConfidentiality	Potential unauthorized data access
 Integrity	File modification and encryption
 Availability	Critical service disruption
 
-🎯 Incident Response Strategy
+Incident Response Strategy
 Immediate Priorities
 Stop ransomware propagation.
 Preserve forensic artifacts.
@@ -80,7 +80,7 @@ Establish trusted communication channels.
 Ensure examination continuity planning.
 Investigate potential exfiltration.
 Begin secure recovery.
-👥 Incident Response Team Structure
+Incident Response Team Structure
 Role	ResponsibilityIncident Response Lead	Overall command and decision-making
 Security Analyst	Detection, analysis, threat hunting
 Forensics Lead	Evidence acquisition and preservation
@@ -90,7 +90,7 @@ Legal & Privacy Advisor	Compliance obligations
 Communications Lead	Stakeholder communication
 Executive Sponsor	Strategic approval and oversight
 
-📋 Response Playbook
+Response Playbook
 First 60 Minutes
 Critical Actions
 Declare incident severity.
@@ -113,7 +113,7 @@ Data exfiltration analysis.
 Recovery environment preparation.
 Credential rotation.
 Service restoration planning.
-🔍 Digital Forensics & Evidence Preservation
+Digital Forensics & Evidence Preservation
 
 The plan includes a structured evidence management process.
 
@@ -137,7 +137,7 @@ Access logged and restricted
 
 This ensures forensic admissibility and investigative reliability.
 
-🔄 Recovery Strategy
+Recovery Strategy
 Recovery Process
 Phase 1 - Eradication
 Identify attack entry point.
@@ -163,7 +163,7 @@ Credentials are rotated.
 Security controls are operational.
 Data integrity validation succeeds.
 Business owners approve service return.
-📢 Communication Strategy
+Communication Strategy
 
 The communication framework ensures timely updates to:
 
@@ -182,7 +182,7 @@ Use verified communication channels.
 Avoid speculation.
 Share only validated facts.
 Maintain a single approved spokesperson.
-🧪 Tabletop Exercise
+Tabletop Exercise
 
 A 60-minute ransomware tabletop exercise was designed to test organizational readiness.
 
@@ -200,7 +200,7 @@ Backup restoration failure.
 Suspicious OAuth application discovery.
 Media inquiries and misinformation campaigns.
 
-✅ Improvement Plan
+Improvement Plan
 High-Priority Recommendations
 Backup Security
 Deploy immutable backups.
@@ -220,7 +220,7 @@ Formalize DFIR retainers.
 Improve phishing awareness training.
 Enhance examination continuity procedures.
 
-🏆 Key Lessons Learned
+Key Lessons Learned
 
 The most important lesson from the exercise is that operational urgency should never override security validation. Restoring services from unverified backups introduces significant risk and may worsen an incident.
 
@@ -231,7 +231,7 @@ Cloud identity systems require equal attention during ransomware investigations.
 Evidence preservation must occur alongside containment.
 Communication should clearly distinguish facts from assumptions.
 Regular testing is essential for recovery confidence.
-📝 Conclusion
+Conclusion
 
 This project demonstrates a complete ransomware incident response framework incorporating:
 
@@ -245,7 +245,6 @@ Stakeholder communications
 Continuous improvement
 
 The proposed approach emphasizes security, resilience, and evidence-based decision-making while ensuring that business and educational services can be restored safely following a major cyber incident.
-
 Technologies, Frameworks & Standards Referenced
 NIST Cybersecurity Framework (CSF)
 NIST SP 800-61 Incident Handling
@@ -255,6 +254,3 @@ Digital Forensics Best Practices
 Business Continuity Management (BCM)
 Ransomware Recovery Methodologies
 
-Author: Atusasiire Daren Cared
- Course: GRC205/GRC105 – Incident Management and Business Continuity
- Repository Purpose: Academic cybersecurity incident response planning and governance exercise.
